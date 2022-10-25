@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Anton&family=Fredoka+One&family=Roboto&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+.about{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	gap: 2rem;
+	padding: 22px 10%;
+}
+.about-text h1{
+	margin: 20px 0;
+	font-size: 50px;
+	font-family: 'Fredoka One', cursive;
+	background: linear-gradient(90deg, #465b91 0%, #000000 30%);;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.about-text p{
+	line-height: 30px;
+	font-size: 25px;
+	margin-bottom: 2rem;
+	text-align: justify;
+	font-family: 'ABeeZee', sans-serif;
+	
+}
+
+.about-img img{
+	border-radius: 50%;
+	border:15px solid #0a090c;
+	box-shadow: 5px 10px 8px #646060;
+	width: 60%;
+	max-width: 500px;
+  	height: auto;
+	margin-top: -0.4rem;
+	cursor:pointer;
+	transition: all 0.2s linear;
+	-webkit-transition: all 0.2s linear;
+}
+.about-img:hover img{
+	transform: scale(1.01) translateY(-5px);
+	background: transparent;
+	-webkit-transform: scale(1.1);
+	box-shadow: 2px 2px 2px #4b4b4b;
+}
+.about-img {
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+	font-size: 32px;
+	margin-bottom: 2rem;
+	font-family: 'Fredoka One', cursive;
+	background: linear-gradient(90deg, #2f4272 0%, #0b121f 100%);;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+p.bottom {
+	justify-content: right;
+	display: flex;
+	font-weight:bold;;
+}
+.logo{
+	justify-content: right;
+	display: flex;
+}
+.logo img{
+	position: relative;
+	max-width: 400px;
+	width: 25%;
+  	height: auto;
+	margin-top: -2.5rem;
+}
+
+@media (max-width: 1325px){
+	section{
+		padding: 130px 3% 60px;
+	}
+}
+
+@media (max-width: 970px){
+	section{
+		padding: 70px 3% 60px;
+	}
+	.about{
+		grid-template-columns: 1fr;
+	}
+	.about-img{
+		text-align: center;
+	}
+	.about-text .bottom {
+		justify-content: center;
+	}
+	.about-text .logo {
+		justify-content: center;
+	}
+
+}
