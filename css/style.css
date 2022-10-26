@@ -61,7 +61,7 @@ body{
 	flex-direction: column;
 	gap: 50px;
 	font-size: 32px;
-	margin-bottom: 2rem;
+	margin-bottom: 3.5rem;
 	font-family: 'Fredoka One', cursive;
 	background: linear-gradient(90deg, #2f4272 0%, #0b121f 100%);;
     -webkit-background-clip: text;
@@ -88,6 +88,10 @@ p.bottom {
 	section{
 		padding: 130px 3% 60px;
 	}
+	.about-img{
+		text-align: center;
+		justify-content: center;
+	}
 }
 
 @media (max-width: 970px){
@@ -96,9 +100,6 @@ p.bottom {
 	}
 	.about{
 		grid-template-columns: 1fr;
-	}
-	.about-img{
-		text-align: center;
 	}
 	.about-text .bottom {
 		justify-content: center;
