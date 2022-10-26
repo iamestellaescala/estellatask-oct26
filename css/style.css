@@ -56,7 +56,6 @@ body{
 	box-shadow: 2px 2px 2px #4b4b4b;
 }
 .about-img {
-	justify-content: center;
 	align-items: center;
 	display: flex;
 	flex-direction: column;
@@ -106,6 +105,9 @@ p.bottom {
 	}
 	.about-text .logo {
 		justify-content: center;
+	}
+	.about-text h1{
+		text-align: center;
 	}
 
 }
